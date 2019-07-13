@@ -1,0 +1,214 @@
+body {
+  font-family: 'Advent Pro', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 1080px;
+  max-height: 100vh;
+  display: grid;
+  grid-template-areas: 
+  ".item1 .item2 .item3"
+  "item1 .item2 .item3"
+  "item1 .item2 .item3"
+  "item1 .item4 .item4";
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(7, auto);
+  grid-auto-flow: row;
+  grid-gap: 0px;
+}
+
+/* Sidebar */
+
+.sidebar {
+  grid-column: 1;
+  grid-row-start: 1;
+  grid-row-end: 8;
+  /* background: linear-gradient(to top, #292E49, #536976, #BBD2C5); */
+  background: linear-gradient(to top, #C06C84, #6C5B7B, #355C7D);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar ul {
+  padding: 0;
+}
+
+.sidebar li{
+  list-style: none;
+  text-align: center;
+  margin: 2em;
+  font-weight: 600;
+}
+
+.about a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.portfolio a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #cccccc;
+}
+
+.contact a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #cccccc;
+}
+
+/* Content */
+
+.content {
+  grid-column: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-color: #E6E6E6;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+  padding-left: 70px;
+}
+
+.hi {
+  font-size: 50px;
+  color: #808080;
+  font-weight: 500;
+  margin: 0px;
+  margin-bottom: 0.5em;
+}
+
+.name {
+  font-size: 70px;
+  color: #808080;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+.charolyn {
+  color: #355C7D;
+  font-weight: 700;
+}
+
+.skills {
+  font-weight: 500;
+  font-size: 25px;
+  color: #808080;
+  margin: 0;
+}
+
+.skillsexperience {
+  color: #355C7D;
+  font-weight: 800;
+  padding-bottom: 0.3em;
+}
+
+.profile {
+  grid-column: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-color: #E6E6E6;
+  display: flex;
+  align-items: center;
+}
+
+.profilepic {
+  padding-top: 30px;
+}
+
+/* projects */
+
+.projects {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  background-color: #ffffff;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  padding-left: 70px;
+}
+
+.projects h2 {
+  color: #355C7D;
+  font-size: 30px; 
+}
+
+.project-images {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+  .project-images {flex-direction: column;}
+}
+
+.todo {
+  display: inline-block;
+  margin: 20px;
+}
+
+.design {
+  display: inline-block;
+  margin: 20px;
+}
+
+.todo a img {
+  width: 300px;
+  height: 185px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .3);
+}
+
+.design a img {
+  width: 300px;
+  height: 185px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .3);
+}
+
+/* Footer */
+
+.footer {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row: 7;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.google {
+  width: 70px;
+  height: 70px;
+  margin: auto 30px;
+}
+
+.github {
+  width: 70px;
+  height: 60.361px;
+  margin: auto 30px;
+}
+
+.linkedin {
+  width: 70px;
+  height: 70px;
+  margin: auto 30px;
+}
+
+.dribble {
+  width: 70px;
+  height: 60.361px;
+  margin: auto 30px;
+}
